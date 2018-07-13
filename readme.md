@@ -4,7 +4,7 @@ Birthday Countdown Calculator 3 with promises.
 
 ## Demo
 
-[https://pndiogo.github.io/bday2/](https://pndiogo.github.io/bday2/)
+[https://pndiogo.github.io/bday3/](https://pndiogo.github.io/bday3/)
 
 ## Info
 
