@@ -1,0 +1,14 @@
+{
+  "name": "bday2",
+  "version": "1.0.0",
+  "description": "Birthday countdown calculator",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paulo Diogo",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <title>Bday Countdown</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col header text-dark">
+                <h1 class="text-center">Bday Countdown</h1>
+            </div>   
+        </div>
+
+        <div class="row">
+            <div class="col sub-header text-primary mb-3">
+                <h4 class="text-center animated bounceIn">Please enter a new birthday person</h4>
+            </div>   
+        </div>
+
+        <form class="form-inline mx-auto needs-validation" id="form" novalidate></form>
+
+            <div class="row">
+                <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                    <div class="form-group mb-3 mb-lg-4">
+                        <label for="formName" class="sr-only">Name</label>
+                        <input type="text" class="form-control form-control-lg" id="formName" placeholder="Name" required>
+                        <div class="invalid-feedback" id="formNameError"><h5><span class="badge badge-danger">Please provide a name</span></h5></div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">    
+                <div class="col-12 col-md-3 offset-md-2 col-xl-2 offset-xl-3">
+                    <div class="form-group mb-3">
+                        <label for="formMonth" class="sr-only">Month</label>
+                        <select class="custom-select form-control-lg" id="formMonth" required>
+                            <option value="">Month</option>
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                        <div class="invalid-feedback" id="formMonthError"><h5><span class="badge badge-danger">Please choose a month</span></h5></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-3 col-xl-2">
+                    <div class="form-group mb-3">
+                        <label for="formDay" class="sr-only">Day</label>
+                        <select class="custom-select form-control-lg" id="formDay" required>
+                            <option value="">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <div class="invalid-feedback" id="formDayError"><h5><span class="badge badge-danger">Please choose a day</span></h5></div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-2 col-xl-2">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block mb-3" id="formSubmit" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/LzLZGG4_GjY">Add</button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="row cards mb-5 mt-4">
+        </div>
+
+        <div class="row justify-content-center" id="pagination-row">
+            <nav aria-label="Pagination">
+                <ul class="pagination" id="pages"></ul>
+            </nav>
+        </div>
+    </div> <!-- End container -->
+   
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="video-container">
+                    <iframe id="cartoonVideo" width="560" height="315" src="//www.youtube.com/embed/0BpMw7gMOsA?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    </div>        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div> <!-- End modal -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/serverdb.js"></script>
+    <script src="js/html.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pagination.js"></script>
+</body>
+</html>

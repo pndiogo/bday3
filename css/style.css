@@ -1,0 +1,139 @@
+body {
+    background-image: url('../img/bkg3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-color: palegreen;
+}
+
+.header h1 {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    margin: 2rem 0;
+    padding: 1.25rem;
+    border-radius: .25rem;
+}
+
+.sub-header h4 {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: .25rem;
+}
+
+.card,
+.page-item {
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover,
+.page-item:hover {
+    box-shadow: 0px 10px 46px -4px rgba(0,0,0,0.75);
+}
+
+.card-img-top {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 150px;
+	height: 150px;
+    border-radius: 50%;
+}
+
+.form-inline .form-control {
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
+
+.loader {
+margin: 0 auto;
+margin-top: 2rem;
+border: 12px solid #f3f3f3;
+border-radius: 50%;
+border-top: 12px solid #007bff;
+width: 90px;
+height: 90px;
+-webkit-animation: spin 1.5s linear infinite; /* Safari */
+animation: spin 1.5s linear infinite;
+z-index: 1000;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+0% { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+/*  Extra small devices (portrait phones, less than 576px)
+    No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .header h1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        font-size: 3rem;
+        padding: 30px;
+
+    }
+
+    .header h4 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-family: 'Poppins', sans-serif;
+        background: #fff;
+        padding: 40px;
+        border-radius: .25rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 745px;
+        margin: 10px auto;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .header h1 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: 5rem;
+        padding: 40px 20px;
+    }
+
+    .sub-header h4 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
