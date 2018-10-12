@@ -1,41 +1,43 @@
+![Bday3Screenshot](img/bday-screenshot-1.png)
+
 # Project Title
 
-Birthday Countdown Calculator 3 with promises.
+Birthday Countdown Calculator 3
 
-## Demo
+## Live Demo
 
 [https://pndiogo.github.io/bday3/](https://pndiogo.github.io/bday3/)
 
 ## Info
 
-Online tool to calculate the time missing for the next birthday.
+Online tool to calculate the time missing for the next birthday. Database is reset every 24h.
 
 ## Related Projects
 
-* **Birthday Countdown Calculator 1** - [bday1](https://github.com/pndiogo/bday)
+- **Birthday Countdown Calculator 1** - [bday1](https://github.com/pndiogo/bday)
 
 Online tool that calculates time missing for next birthday for some of my close family members. Static content.
 
-* **Birthday Countdown Calculator 2** - [bday2](https://github.com/pndiogo/bday2)
+- **Birthday Countdown Calculator 2** - [bday2](https://github.com/pndiogo/bday2)
 
 Birthday Countdown Calculator 2 with persistent users and asynchronous callbacks.
 
 ## Built With
 
-* HTML5
-* CSS3
-* JS
-* jQuery
-* Bootstrap 4
-* Animate CSS
-* AJAX calls with promises
-* Asynchronous callbacks
-* Git
-* Npm
+- HTML5
+- CSS3
+- JS
+- jQuery
+- Bootstrap 4
+- Animate CSS
+- AJAX calls with promises
+- Asynchronous callbacks
+- Git
+- Npm
 
 ## Authors
 
-* **Paulo Diogo** - [pndiogo](https://github.com/pndiogo)
+- **Paulo Diogo** - [pndiogo](https://github.com/pndiogo)
 
 ## License
 
